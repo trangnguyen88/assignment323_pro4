@@ -1,0 +1,11 @@
+//declare variables
+num1, num2,num3, t:int;
+
+//initialize variables
+num1 =3; num2= 5 ;
+	num3 =	7 ;
+//compute and display their total
+t=	num1 + num2;//compute num1+num2
+t	= t+num3; //compute their total
+
+print ( t );	
