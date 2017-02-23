@@ -10,7 +10,7 @@ public class CFG {
 	public static void main(String[] args) {
 		//create the table size 5*3 (state/input)
 		int table[][]=new int [][]{
-			{0,1,2},{2,1,3},{0,3,3},{1,4,2},{4,4,4}};
+			{0,1,2},{2,1,3},{0,3,3},{1,3,2}};
 		String answer="y";
 		String exp;
 		Scanner scan= new Scanner(System.in);
@@ -51,10 +51,10 @@ public class CFG {
 			
 			state = lang[state][col];
 		}
-		//state is 3 or 4 , return false
-		if(state == 3 || state == 4)
-			return false;
+		//state is 2 or 1 , return true
+		if(state == 2 || state == 1)
+			return true;
 
-		return true;
+		return false;
 	}
 }
