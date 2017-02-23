@@ -68,7 +68,7 @@ public class Remover {
 	//adding space before and after each token
 	private static List<String> formatLines(List<String> lines){
 		List<String> formattedLines = new ArrayList<String>();
-		String tokens = ",+-*/()=";
+		String tokens = ",+-*/()=:";
 		for(String line:lines){
 			String formattedLine = "";
 			for(char c : line.toCharArray()){
